@@ -119,7 +119,7 @@ The project uses JavaFX through Maven dependencies, so you do not need to manual
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/smart-ambulance-route-optimizer.git
+https://github.com/mateossharka9-droid/smart-ambulance-route-optimizer
 cd smart-ambulance-route-optimizer
 ```
 
