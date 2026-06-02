@@ -24,20 +24,6 @@ This project was developed for a **Data Structures & Algorithms** course and cle
 
 ---
 
-## Important Algorithm Fix
-
-The original A* implementation used raw Euclidean distance from the 3D coordinates as the heuristic. The road weights in the graph are small travel-cost values, while the visual coordinates are much larger. That could make the heuristic overestimate and return a non-optimal path.
-
-This GitHub-ready version fixes that by automatically scaling the heuristic using the smallest `edge weight / coordinate distance` ratio in the graph:
-
-```java
-h(n) = euclideanDistance(n, target) * safeScale
-```
-
-This keeps A* admissible for the current weighted graph and makes its result match Dijkstra's shortest-path cost.
-
----
-
 ## Algorithms Used
 
 ### BFS — Breadth-First Search
